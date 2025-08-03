@@ -1,4 +1,4 @@
-module github.com/s-petr/reactpb
+module github.com/mvpedro/tracker
 
 go 1.24.0
 

@@ -1,5 +1,5 @@
 {
-  "name": "reactpb",
+  "name": "tracker",
   "description": "React + PocketBase Boilerplate",
   "author": {
     "name": "Sergei Petrov",
@@ -8,9 +8,9 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/s-petr/reactpb"
+    "url": "https://github.com/mvpedro/tracker"
   },
-  "homepage": "https://github.com/s-petr/reactpb",
+  "homepage": "https://github.com/mvpedro/tracker",
   "version": "1.0.0",
   "type": "module",
   "scripts": {
@@ -18,9 +18,9 @@
     "dev:server": "cd backend && go run . --dir=../db serve",
     "dev": "npm run dev:client & npm run dev:server",
     "build:client": "npm run lint && vite build",
-    "build:server": "cd backend && CGO_ENABLED=0 go build -tags production -o ../reactpb",
+    "build:server": "cd backend && CGO_ENABLED=0 go build -tags production -o ../tracker",
     "build": "npm run build:client && npm run build:server",
-    "preview": "./reactpb serve",
+    "preview": "./tracker serve",
     "compose": "docker compose up --build -d",
     "pretty": "prettier frontend/src --write",
     "lint": "tsc --noEmit && eslint frontend/src"

@@ -7,7 +7,7 @@ backend/dist
 .vscode/*
 
 # Compiled binary
-reactpb
+tracker
 
 # Database
 db

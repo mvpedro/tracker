@@ -1,12 +1,12 @@
 services:
-  reactpb:
+  tracker:
     build:
       context: .
       dockerfile: Dockerfile
       args:
         - DOMAIN_NAME=${DOMAIN_NAME}
         - PLAUSIBLE_API_HOST=${PLAUSIBLE_API_HOST}
-    container_name: reactpb
+    container_name: tracker
     restart: unless-stopped
     environment:
       - MAILER_CRON_SCHEDULE=${MAILER_CRON_SCHEDULE}

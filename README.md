@@ -73,7 +73,7 @@ This boilerplate implements a **monorepo architecture** with clear separation be
 ## 📁 Project Structure
 
 ```
-reactpb/
+tracker/
 ├── backend/                 # Go + PocketBase backend
 │   ├── main.go             # Application entry point
 │   ├── auth.go             # Authentication hooks
@@ -178,7 +178,7 @@ reactpb/
 1. **Clone the repository**
    ```bash
    git clone <repository-url>
-   cd reactpb
+   cd tracker
    ```
 
 2. **Install dependencies**
@@ -192,7 +192,7 @@ reactpb/
    npm run build
    
        # Create admin user
-    ./reactpb superuser upsert admin@example.com your-password
+    ./tracker superuser upsert admin@example.com your-password
    
    # Import database schema
    # Visit http://localhost:8090/_/ and import backend/pb_schema.json
@@ -332,7 +332,7 @@ You can modify these collections or add new ones to match your application's nee
 ### Single Binary Deployment
 ```bash
 npm run build
-./reactpb serve
+./tracker serve
 ```
 
 ### Docker Deployment

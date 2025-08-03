@@ -2,10 +2,10 @@ package main
 
 import (
 	"embed"
-
 	"github.com/pocketbase/pocketbase/core"
 	"github.com/pocketbase/pocketbase/tools/cron"
 	"github.com/pocketbase/pocketbase/tools/template"
+	"github.com/mvpedro/tracker/notifier"
 )
 
 //go:embed templates

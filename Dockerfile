@@ -17,15 +17,15 @@ WORKDIR /app
 
 COPY --from=builder-bun /app/backend .
 RUN go mod download
-RUN CGO_ENABLED=0 go build -tags production -o reactpb
+RUN CGO_ENABLED=0 go build -tags production -o tracker
 
 # Deploy binary
 FROM alpine:latest AS runner
 WORKDIR /app
 
-COPY --from=builder-go /app/reactpb .
-RUN chmod +x /app/reactpb
+COPY --from=builder-go /app/tracker .
+RUN chmod +x /app/tracker
 
 EXPOSE 8090
 
-CMD ["/app/reactpb", "serve", "--http=0.0.0.0:8090"]
+CMD ["/app/tracker", "serve", "--http=0.0.0.0:8090"]
