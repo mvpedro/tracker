@@ -1,5 +1,4 @@
 import ScrollToTopButton from '@/components/footer/scroll-to-top'
-import { GitHubLogoIcon } from '@radix-ui/react-icons'
 import { Link } from '@tanstack/react-router'
 
 export default function Footer() {
@@ -13,7 +12,6 @@ export default function Footer() {
             SP Web Development
           </a>
         </p>{' '}
-
         <p className='text-center md:text-right'>
           <Link
             resetScroll={true}
